@@ -1,11 +1,17 @@
-package codebreaker
+package main
 
 import "fmt"
+
+var secret = ""
+
+func setSecret(s string){
+  secret = s
+}
+
 
 func codebreaker(s string) string{
   var equis string = ""
   var rayita string = ""
-  secret := "2584"
   for i, r := range s {
         c := string(r)
         for j, k := range secret {

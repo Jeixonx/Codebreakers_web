@@ -1,9 +1,10 @@
-package codebreaker
+package main
 
 import "testing"
 
 func Test_codebreakerAciertaX(t *testing.T){
   //6189
+  setSecret("2584")
   expected := "X"
   actual := codebreaker("6189")
   if actual != expected{
@@ -13,6 +14,7 @@ func Test_codebreakerAciertaX(t *testing.T){
 
 func Test_codebreakerAciertaXX(t *testing.T){
   //6189
+  setSecret("2584")
   expected := "XX"
   actual := codebreaker("6589")
   if actual != expected{
@@ -22,6 +24,7 @@ func Test_codebreakerAciertaXX(t *testing.T){
 
 func Test_codebreakerAcierta_(t *testing.T){
   //6189
+  setSecret("2584")
   expected := "_"
   actual := codebreaker("1762")
   if actual != expected{
@@ -31,6 +34,7 @@ func Test_codebreakerAcierta_(t *testing.T){
 
 func Test_codebreakerAciertaX_(t *testing.T){
   //6189
+  setSecret("2584")
   expected := "X_"
   actual := codebreaker("1264")
   if actual != expected{
@@ -40,6 +44,7 @@ func Test_codebreakerAciertaX_(t *testing.T){
 
 func Test_codebreakerAciertaXXXX(t *testing.T){
   //6189
+  setSecret("2584")
   expected := "XXXX"
   actual := codebreaker("2584")
   if actual != expected{
@@ -49,6 +54,7 @@ func Test_codebreakerAciertaXXXX(t *testing.T){
 
 func Test_codebreakerAcierta____(t *testing.T){
   //6189
+  setSecret("2584")
   expected := "____"
   actual := codebreaker("4852")
   if actual != expected{
