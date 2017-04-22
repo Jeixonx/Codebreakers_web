@@ -1,2 +1,2 @@
-web: Codebreaker_web
+web: codebreaker
 
